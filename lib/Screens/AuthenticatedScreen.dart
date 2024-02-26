@@ -3,14 +3,11 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:new_lj/Screens/pdf_screen.dart';
 
 class AuthenticatedScreen extends StatelessWidget {
-
-  const AuthenticatedScreen({super.key});
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Authenticated Screen'),
+        title: Text('Authenticated Screen'),
       ),
       body: StreamBuilder(
         stream: FirebaseFirestore.instance.collection('subjects').snapshots(),
@@ -49,7 +46,7 @@ class AuthenticatedScreen extends StatelessWidget {
 class SubjectPDFListScreen extends StatelessWidget {
   final String subjectName;
 
-  const SubjectPDFListScreen(this.subjectName, {super.key});
+  SubjectPDFListScreen(this.subjectName);
 
   @override
   Widget build(BuildContext context) {
@@ -83,7 +80,7 @@ class SubjectPDFListScreen extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => PDFScreen(pdfUrl: pdfUrl),
+                      builder: (context) => PDFScreen(pdfTitle: pdfTitle, pdfUrl: pdfUrl),
                     ),
                   );
                 },

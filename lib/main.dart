@@ -24,8 +24,8 @@ class MyApp extends StatelessWidget {
       home: LoginScreen(),
       initialRoute: '/',
       routes: {
-        '/authenticated': (context) => const AuthenticatedScreen(),
-        'pdfPage': (context) => const AuthenticatedScreen(),
+        '/authenticated': (context) => AuthenticatedScreen(),
+        'pdfPage': (context) => AuthenticatedScreen(),
       },
       onUnknownRoute: (settings) {
         return MaterialPageRoute(
