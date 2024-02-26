@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "122651634072",
+    "project_id": "newlj-documents",
+    "storage_bucket": "newlj-documents.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:122651634072:android:c023bbeaf7fca04609a3ed",
+        "android_client_info": {
+          "package_name": "com.example.new_lj"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDr4-vntZ-WWqqmRq9BhebDmQfhSAuGrks"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:122651634072:android:56ebc26490ba13e709a3ed",
+        "android_client_info": {
+          "package_name": "com.example.newlj_documents"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDr4-vntZ-WWqqmRq9BhebDmQfhSAuGrks"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
